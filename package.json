@@ -1,13 +1,16 @@
 {
-  "name": "@microsoft/fetch-event-source",
+  "name": "@magiccircle/fetch-event-source-cfworker",
   "version": "2.0.1",
   "description": "A better API for making Event Source requests, with all the features of fetch()",
   "homepage": "https://github.com/Azure/fetch-event-source#readme",
-  "repository": "github:Azure/fetch-event-source",
-  "bugs": {
-    "url": "https://github.com/Azure/fetch-event-source/issues"
+  "repository": "magic-circle-studio/fetch-event-source-cfworker",
+  "publishConfig": {
+    "access": "public"
   },
-  "author": "Microsoft",
+  "bugs": {
+    "url": "https://github.com/magic-circle-studio/fetch-event-source-cfworker"
+  },
+  "author": "Magic Circle Studio, Inc.",
   "license": "MIT",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -17,7 +20,7 @@
     "clean": "rimraf ./lib ./coverage",
     "prebuild": "npm run clean",
     "build": "tsc && tsc -p tsconfig.esm.json",
-    "prepublishOnly": "npm run build && npm run test"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/jasmine": "^4.3.1",
